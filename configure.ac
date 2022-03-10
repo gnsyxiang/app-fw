@@ -92,6 +92,8 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608/res/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608/res/font/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608/res/voice/Makefile
+                 platform/eeasytech/SV823/filesystem/HY-8608/res/voice/cn/Makefile
+                 platform/eeasytech/SV823/filesystem/HY-8608/res/voice/en/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608/usr_config/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/ROM/Makefile
@@ -102,6 +104,8 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/res/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/res/font/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/res/voice/Makefile
+                 platform/eeasytech/SV823/filesystem/HY-8608E/res/voice/cn/Makefile
+                 platform/eeasytech/SV823/filesystem/HY-8608E/res/voice/en/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/usr_config/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/ROM/Makefile
@@ -112,8 +116,71 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/res/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/res/font/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/res/voice/Makefile
+                 platform/eeasytech/SV823/filesystem/HY-8608EV2/res/voice/cn/Makefile
+                 platform/eeasytech/SV823/filesystem/HY-8608EV2/res/voice/en/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/usr_config/Makefile
                  platform/eeasytech/SV823/filesystem/Makefile
+                 platform/eeasytech/SV826/3rd_lib/Makefile
+                 platform/eeasytech/SV826/3rd_lib/bin/Makefile
+                 platform/eeasytech/SV826/3rd_lib/include/Makefile
+                 platform/eeasytech/SV826/3rd_lib/lib/Makefile
+                 platform/eeasytech/SV826/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/ROM/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/bin/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/etc/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/ko/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/lib/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/res/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/res/font/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/res/voice/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/res/voice/cn/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/res/voice/en/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808/usr_config/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/ROM/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/bin/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/etc/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/ko/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/lib/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/res/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/res/font/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/res/voice/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/res/voice/cn/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/res/voice/en/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808E/usr_config/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/ROM/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/bin/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/etc/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/ko/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/lib/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/res/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/res/font/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/res/voice/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/res/voice/cn/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/res/voice/en/Makefile
+                 platform/eeasytech/SV826/filesystem/HY-8808EV2/usr_config/Makefile
+                 platform/eeasytech/SV826/filesystem/Makefile
+                 platform/pc/Makefile
+                 platform/pc/pc/3rd_lib/Makefile
+                 platform/pc/pc/3rd_lib/bin/Makefile
+                 platform/pc/pc/3rd_lib/include/Makefile
+                 platform/pc/pc/3rd_lib/lib/Makefile
+                 platform/pc/pc/Makefile
+                 platform/pc/pc/filesystem/HY-pc/Makefile
+                 platform/pc/pc/filesystem/HY-pc/ROM/Makefile
+                 platform/pc/pc/filesystem/HY-pc/bin/Makefile
+                 platform/pc/pc/filesystem/HY-pc/etc/Makefile
+                 platform/pc/pc/filesystem/HY-pc/ko/Makefile
+                 platform/pc/pc/filesystem/HY-pc/lib/Makefile
+                 platform/pc/pc/filesystem/HY-pc/res/Makefile
+                 platform/pc/pc/filesystem/HY-pc/res/font/Makefile
+                 platform/pc/pc/filesystem/HY-pc/res/voice/Makefile
+                 platform/pc/pc/filesystem/HY-pc/res/voice/cn/Makefile
+                 platform/pc/pc/filesystem/HY-pc/res/voice/en/Makefile
+                 platform/pc/pc/filesystem/HY-pc/usr_config/Makefile
+                 platform/pc/pc/filesystem/Makefile
                  res/Makefile
                  upgrade_service/Makefile
                  upgrade_service/include/Makefile

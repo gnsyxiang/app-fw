@@ -25,6 +25,7 @@ SUBDIRS = \
           dog               \
           misc_service      \
           MSG_server        \
+          platform          \
           upgrade_service
 
 # ------------------

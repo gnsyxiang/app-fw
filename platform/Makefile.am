@@ -18,5 +18,7 @@
 #     last modified: 10/03 2022 17:07
 # ===============================================================
 
-SUBDIRS = eeasytech
+SUBDIRS = \
+          eeasytech \
+          pc
 
