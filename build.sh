@@ -72,6 +72,7 @@ select_product()
     _product_file=./build-script/${usr_select_vender}/${usr_select_chip}/config.sh
 
     _product=`sed '/^product=/!d;s/.*=//' $_product_file`
+
     format_str_array_output "${_product}"
 
     echo -n "please select product: "
@@ -91,6 +92,34 @@ select_product()
     fi
 
     configure_param="${configure_param} --with-product=${usr_select_product}"
+}
+
+select_language()
+{
+    echo "support language: "
+    _product_file=./build-script/${usr_select_vender}/${usr_select_chip}/config.sh
+
+    _language=`sed '/^language=/!d;s/.*=//' $_product_file`
+
+    format_str_array_output "${_language}"
+
+    echo -n "please select language: "
+    read usr_select_language
+
+    _flag="false"
+    _language_array=(`echo ${_language}`)
+    for i in ${_language_array[@]}; do
+        if [[ $i = ${usr_select_language} ]]; then
+            _flag="true"
+            break
+        fi
+    done
+    if [[ ${_flag} != "true" ]]; then
+        echo "error select language !!!"
+        exit
+    fi
+
+    configure_param="${configure_param} --with-language=${usr_select_language}"
 }
 
 select_build_version()
@@ -170,6 +199,7 @@ get_config()
 select_vender
 select_chip
 select_product
+select_language
 select_build_version
 get_com_config
 get_config

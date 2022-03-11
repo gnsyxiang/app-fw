@@ -18,6 +18,13 @@
 #     last modified: 10/03 2022 19:32
 # ===============================================================
 
-SUBDIRS = \
-          cn \
-          en
+if COMPILE_SELECT_LANGUAGE_CN
+_select_language = cn
+endif
+
+if COMPILE_SELECT_LANGUAGE_EN
+_select_language = en
+endif
+
+SUBDIRS = $(_select_language)
+

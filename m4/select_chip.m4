@@ -45,7 +45,7 @@ AC_DEFUN([SELECT_CHIP],
                 chip="SV826"
             ;;
             *)
-                AC_MSG_ERROR([bad value ${with_chip} for --with-vender=@<:@pc-chip|SV823|SV826@:>@])
+                AC_MSG_ERROR([bad value ${with_chip} for --with-chip=@<:@pc-chip|SV823|SV826@:>@])
             ;;
         esac
 
