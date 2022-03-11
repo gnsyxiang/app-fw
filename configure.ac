@@ -25,6 +25,10 @@ CHECK_VERSION_INFO
 CHECK_DOXYGEN
 # CHECK_JAVA
 
+SELECT_VENDER
+SELECT_CHIP
+SELECT_PRODUCT
+
 PKG_PROG_PKG_CONFIG
 if test -n "$PKG_CONFIG"; then
     # Horrible hack for systems where the pkg-config install directory is simply wrong!
@@ -163,24 +167,24 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/eeasytech/SV826/filesystem/HY-8808EV2/usr_config/Makefile
                  platform/eeasytech/SV826/filesystem/Makefile
                  platform/pc/Makefile
-                 platform/pc/pc/3rd_lib/Makefile
-                 platform/pc/pc/3rd_lib/bin/Makefile
-                 platform/pc/pc/3rd_lib/include/Makefile
-                 platform/pc/pc/3rd_lib/lib/Makefile
-                 platform/pc/pc/Makefile
-                 platform/pc/pc/filesystem/HY-pc/Makefile
-                 platform/pc/pc/filesystem/HY-pc/ROM/Makefile
-                 platform/pc/pc/filesystem/HY-pc/bin/Makefile
-                 platform/pc/pc/filesystem/HY-pc/etc/Makefile
-                 platform/pc/pc/filesystem/HY-pc/ko/Makefile
-                 platform/pc/pc/filesystem/HY-pc/lib/Makefile
-                 platform/pc/pc/filesystem/HY-pc/res/Makefile
-                 platform/pc/pc/filesystem/HY-pc/res/font/Makefile
-                 platform/pc/pc/filesystem/HY-pc/res/voice/Makefile
-                 platform/pc/pc/filesystem/HY-pc/res/voice/cn/Makefile
-                 platform/pc/pc/filesystem/HY-pc/res/voice/en/Makefile
-                 platform/pc/pc/filesystem/HY-pc/usr_config/Makefile
-                 platform/pc/pc/filesystem/Makefile
+                 platform/pc/pc-chip/3rd_lib/Makefile
+                 platform/pc/pc-chip/3rd_lib/bin/Makefile
+                 platform/pc/pc-chip/3rd_lib/include/Makefile
+                 platform/pc/pc-chip/3rd_lib/lib/Makefile
+                 platform/pc/pc-chip/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/ROM/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/bin/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/etc/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/ko/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/lib/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/res/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/res/font/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/res/voice/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/res/voice/cn/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/res/voice/en/Makefile
+                 platform/pc/pc-chip/filesystem/HY-pc/usr_config/Makefile
+                 platform/pc/pc-chip/filesystem/Makefile
                  res/Makefile
                  upgrade_service/Makefile
                  upgrade_service/include/Makefile

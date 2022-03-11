@@ -18,9 +18,17 @@
 #     last modified: 10/03 2022 17:12
 # ===============================================================
 
-SUBDIRS = \
-          HY-8808       \
-          HY-8808E      \
-          HY-8808EV2
+if COMPILE_SELECT_PRODUCT_HY_8808
+_select_product = HY-8808
+endif
 
+if COMPILE_SELECT_PRODUCT_HY_8808E
+_select_product = HY-8808E
+endif
+
+if COMPILE_SELECT_PRODUCT_HY_8808EV2
+_select_product = HY-8808EV2
+endif
+
+SUBDIRS = ${_select_product}
 

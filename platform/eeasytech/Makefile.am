@@ -18,7 +18,13 @@
 #     last modified: 10/03 2022 17:08
 # ===============================================================
 
-SUBDIRS = \
-          SV823     \
-          SV826
+if COMPILE_SELECT_CHIP_SV823
+_select_chip = SV823
+endif
+
+if COMPILE_SELECT_CHIP_SV826
+_select_chip = SV826
+endif
+
+SUBDIRS = $(_select_chip)
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-chip=pc
+chip=pc-chip
 
-product=pc
+product=HY-pc
 
 gcc_version=x86_64-linux-gnu
 host=

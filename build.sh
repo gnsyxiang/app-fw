@@ -2,13 +2,22 @@
 
 # set -x
 
+format_str_array_output()
+{
+    _out_put_array=(`echo ${1}`)
+    for i in ${_out_put_array[@]}; do
+        echo "    $i"
+    done
+}
+
 select_vender()
 {
     echo "support vender: "
     for i in `find ./build-script/ -maxdepth 1 -type d`; do
-        vender="${vender} ${i##*/}"
+        _vender="${_vender} ${i##*/}"
     done
-    echo "${vender}"
+
+    format_str_array_output "${_vender}"
 
     echo -n "please select vender: "
     read usr_select_vender
@@ -24,6 +33,8 @@ select_vender()
         echo "error select vender !!!"
         exit
     fi
+
+    configure_param="${configure_param} --with-vender=${usr_select_vender}"
 }
 
 select_chip()
@@ -33,7 +44,8 @@ select_chip()
         _chip=`sed '/^chip=/!d;s/.*=//' $i`
         chip="${chip} ${_chip}"
     done
-    echo " ${chip}"
+
+    format_str_array_output "${chip}"
 
     echo -n "please select chip: "
     read usr_select_chip
@@ -50,6 +62,8 @@ select_chip()
         echo "error select chip !!!"
         exit
     fi
+
+    configure_param="${configure_param} --with-chip=${usr_select_chip}"
 }
 
 select_product()
@@ -58,7 +72,7 @@ select_product()
     _product_file=./build-script/${usr_select_vender}/${usr_select_chip}/config.sh
 
     _product=`sed '/^product=/!d;s/.*=//' $_product_file`
-    echo ${_product}
+    format_str_array_output "${_product}"
 
     echo -n "please select product: "
     read usr_select_product
@@ -75,18 +89,22 @@ select_product()
         echo "error select product !!!"
         exit
     fi
+
+    configure_param="${configure_param} --with-product=${usr_select_product}"
 }
 
 select_build_version()
 {
     echo "support build version: "
-    echo "  release debug"
+    _build_version="release debug"
+
+    format_str_array_output "${_build_version}"
 
     echo -n "please select build version: "
     read usr_select_build_version
 
     _flag="false"
-    _product_array=(`echo "release debug"`)
+    _product_array=(`echo "${_build_version}"`)
     for i in ${_product_array[@]}; do
         if [[ $i = ${usr_select_build_version} ]]; then
             _flag="true"

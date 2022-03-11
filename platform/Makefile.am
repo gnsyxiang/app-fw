@@ -18,7 +18,13 @@
 #     last modified: 10/03 2022 17:07
 # ===============================================================
 
-SUBDIRS = \
-          eeasytech \
-          pc
+if COMPILE_SELECT_VENDER_PC
+_select_vender = pc
+endif
+
+if COMPILE_SELECT_VENDER_EEASYTECH
+_select_vender = eeasytech
+endif
+
+SUBDIRS = $(_select_vender)
 
