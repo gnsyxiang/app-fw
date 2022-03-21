@@ -27,7 +27,7 @@ AC_DEFUN([SELECT_CHIP],
         chip=""
 
         AC_ARG_WITH([chip],
-            [AS_HELP_STRING([--with-chip=@<:@pc-chip|SV823|SV826@:>@], [select chip about @<:@pc-chip|SV823|SV826@:>@ @<:@default=pc-chip@:>@])],
+            [AS_HELP_STRING([--with-chip=@<:@pc-chip|SV823@:>@], [select chip about @<:@pc-chip|SV823@:>@ @<:@default=pc-chip@:>@])],
             [],
             [with_chip=pc-chip])
 
@@ -40,17 +40,12 @@ AC_DEFUN([SELECT_CHIP],
                 AC_DEFINE(HAVE_SELECT_CHIP_SV823,  1, [select SV823 chip])
                 chip="SV823"
             ;;
-            SV826)
-                AC_DEFINE(HAVE_SELECT_CHIP_SV826,  1, [select SV826 chip])
-                chip="SV826"
-            ;;
             *)
-                AC_MSG_ERROR([bad value ${with_chip} for --with-chip=@<:@pc-chip|SV823|SV826@:>@])
+                AC_MSG_ERROR([bad value ${with_chip} for --with-chip=@<:@pc-chip|SV823@:>@])
             ;;
         esac
 
         AM_CONDITIONAL([COMPILE_SELECT_CHIP_PC],        [test "x$with_chip" = "xpc-chip"])
         AM_CONDITIONAL([COMPILE_SELECT_CHIP_SV823],     [test "x$with_chip" = "xSV823"])
-        AM_CONDITIONAL([COMPILE_SELECT_CHIP_SV826],     [test "x$with_chip" = "xSV826"])
     ])
 

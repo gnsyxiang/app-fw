@@ -5,7 +5,7 @@
 # @file    Makefile.am
 # @brief   
 # @author  gnsyxiang <gnsyxiang@163.com>
-# @date    10/03 2022 17:08
+# @date    21/03 2022 18:39
 # @version v0.0.1
 # 
 # @since    note
@@ -13,14 +13,12 @@
 # 
 #     change log:
 #     NO.     Author              Date            Modified
-#     00      zhenquan.qiu        10/03 2022      create the file
+#     00      zhenquan.qiu        21/03 2022      create the file
 # 
-#     last modified: 10/03 2022 17:08
+#     last modified: 21/03 2022 18:39
 # ===============================================================
 
-if COMPILE_SELECT_CHIP_SV823
-_select_chip = SV823
-endif
-
-SUBDIRS = $(_select_chip)
+SUBDIRS = \
+          ROM           \
+          usr_config
 
