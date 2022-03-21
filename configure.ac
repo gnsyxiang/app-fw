@@ -68,6 +68,11 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  MSG_server/res/Makefile
                  MSG_server/src/Makefile
                  Makefile
+                 build-script/Makefile
+                 build-script/eeasytech/Makefile
+                 build-script/eeasytech/SV823/Makefile
+                 build-script/pc/Makefile
+                 build-script/pc/pc-chip/Makefile
                  demo_app/Makefile
                  demo_app/include/Makefile
                  demo_app/res/Makefile
