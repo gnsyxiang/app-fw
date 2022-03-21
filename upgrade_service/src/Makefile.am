@@ -57,10 +57,18 @@ _ldflags_com    +=
 _ldadd_com      +=
 
 bin_PROGRAMS                += upgrade_service
-upgrade_service_SOURCES     = $(_sources_com) main.c
+upgrade_service_SOURCES     = $(_sources_com) upgrade_service_main.c
 upgrade_service_CPPFLAGS    = $(_cppflags_com)
 upgrade_service_CFLAGS      = $(_cflags_com)
 upgrade_service_CXXFLAGS    = $(_cxxflags_com)
 upgrade_service_LDFLAGS     = $(_ldflags_com)
 upgrade_service_LDADD       = $(_ldadd_com)
+
+bin_PROGRAMS                += upgrade
+upgrade_SOURCES             = $(_sources_com) upgrade_main.c
+upgrade_CPPFLAGS            = $(_cppflags_com)
+upgrade_CFLAGS              = $(_cflags_com)
+upgrade_CXXFLAGS            = $(_cxxflags_com)
+upgrade_LDFLAGS             = $(_ldflags_com)
+upgrade_LDADD               = $(_ldadd_com)
 

@@ -90,6 +90,14 @@ MSG_server
 demo_app
 dog
 misc_service
+upgrade
 upgrade_service
+
+#-------------------------
+# Force tracking directory
+#-------------------------
+!upgrade_service/
+
+
 
 

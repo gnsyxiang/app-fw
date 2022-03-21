@@ -2,7 +2,7 @@
  * 
  * Release under GPLv-3.0.
  * 
- * @file    main.c
+ * @file    upgrade_service_main.c
  * @brief   
  * @author  gnsyxiang <gnsyxiang@163.com>
  * @date    10/03 2022 16:57
