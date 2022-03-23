@@ -81,6 +81,8 @@ doxygen/
 *.o
 *.lo
 *.la
+platform/eeasytech/SV823/filesystem/HY-8608/app/res/font/*.font
+platform/eeasytech/SV823/filesystem/HY-8608/app/res/voice/*.pcm
 
 LICENSE
 README.md

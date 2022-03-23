@@ -26,7 +26,8 @@ SUBDIRS = \
           misc_service      \
           MSG_server        \
           platform          \
-          upgrade_service
+          upgrade_service   \
+          res
 
 # ------------------
 # defining variables

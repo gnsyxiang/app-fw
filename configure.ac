@@ -94,47 +94,8 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/eeasytech/SV823/3rd_lib/lib/Makefile
                  platform/eeasytech/SV823/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/bin/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/etc/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/ko/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/lib/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/res/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/res/font/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/res/voice/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/res/voice/cn/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/app/res/voice/en/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/param/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/param/ROM/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608/param/usr_config/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/bin/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/etc/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/ko/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/lib/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/res/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/res/font/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/res/voice/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/res/voice/cn/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/app/res/voice/en/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/param/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/param/ROM/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608E/param/usr_config/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/bin/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/etc/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/ko/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/lib/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/res/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/res/font/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/res/voice/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/res/voice/cn/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/app/res/voice/en/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/param/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/param/ROM/Makefile
-                 platform/eeasytech/SV823/filesystem/HY-8608EV2/param/usr_config/Makefile
                  platform/eeasytech/SV823/filesystem/Makefile
                  platform/pc/Makefile
                  platform/pc/pc-chip/3rd_lib/Makefile
@@ -156,6 +117,10 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/pc/pc-chip/filesystem/HY-pc/usr_config/Makefile
                  platform/pc/pc-chip/filesystem/Makefile
                  res/Makefile
+                 res/font/Makefile
+                 res/voice/Makefile
+                 res/voice/cn/Makefile
+                 res/voice/en/Makefile
                  upgrade_service/Makefile
                  upgrade_service/include/Makefile
                  upgrade_service/res/Makefile

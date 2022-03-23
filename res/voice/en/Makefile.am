@@ -5,7 +5,7 @@
 # @file    Makefile.am
 # @brief   
 # @author  gnsyxiang <gnsyxiang@163.com>
-# @date    08/03 2021 08:16
+# @date    23/03 2022 19:12
 # @version v0.0.1
 # 
 # @since    note
@@ -13,24 +13,26 @@
 # 
 #     change log:
 #     NO.     Author              Date            Modified
-#     00      zhenquan.qiu        08/03 2021      create the file
+#     00      zhenquan.qiu        23/03 2022      create the file
 # 
-#     last modified: 08/03 2021 08:16
+#     last modified: 23/03 2022 19:12
 # ===============================================================
-
-SUBDIRS = \
-          font  \
-          voice
 
 # ------------------
 # defining variables
 # ------------------
-_dist_file_com  =
+_install_files_com  =
+voicedir            = $(prefix)/res/voice
+voice_DATA          =
 
-# ---------------
-# make dist files
-# ---------------
-_dist_file_com  += \
-                   Doxyfile             \
-                   get_project_info.sh
-EXTRA_DIST      = $(_dist_file_com)
+# ---------------------
+# add necessary content
+# ---------------------
+
+
+# ------------------
+# make install files
+# ------------------
+_install_files_com  += demo.pcm
+voice_DATA          += $(_install_files_com)
+
