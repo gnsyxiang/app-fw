@@ -18,4 +18,3 @@ cxxflag=
 ldflag=-rdynamic
 lib=
 
-install_path=/opt/data/office/xia/app-fw

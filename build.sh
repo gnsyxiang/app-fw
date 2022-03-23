@@ -185,7 +185,7 @@ get_config()
     _lib=`sed '/^lib=/!d;s/lib=//' $_config_file`
 
     _install_path=`sed '/^install_path=/!d;s/.*=//' $_config_file`
-    install_path=${_install_path}/platform/${usr_select_vender}/${usr_select_chip}/filesystem/${usr_select_product}
+    install_path=`pwd`/platform/${usr_select_vender}/${usr_select_chip}/filesystem/${usr_select_product}/app
 
     cppflag="${cppflag} ${_cppflag}"
     cflag="${cflag} ${_cflag}"
