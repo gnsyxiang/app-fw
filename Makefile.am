@@ -21,13 +21,14 @@
 include res/doxygen.am
 
 SUBDIRS = \
-          demo_app          \
           dog               \
+          demo_app          \
           misc_service      \
           MSG_server        \
-          platform          \
           upgrade_service   \
-          res
+          net_service       \
+          res               \
+          platform
 
 # ------------------
 # defining variables

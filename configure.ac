@@ -86,6 +86,10 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  misc_service/include/Makefile
                  misc_service/res/Makefile
                  misc_service/src/Makefile
+                 net_service/Makefile
+                 net_service/include/Makefile
+                 net_service/res/Makefile
+                 net_service/src/Makefile
                  platform/Makefile
                  platform/eeasytech/Makefile
                  platform/eeasytech/SV823/3rd_lib/Makefile

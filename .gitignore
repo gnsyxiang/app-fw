@@ -81,24 +81,25 @@ doxygen/
 *.o
 *.lo
 *.la
-platform/eeasytech/SV823/filesystem/HY-8608/app/res/font/*.font
-platform/eeasytech/SV823/filesystem/HY-8608/app/res/voice/*.pcm
+platform/*/*/filesystem/*/app/res/font/*.font
+platform/*/*/filesystem/*/app/res/voice/*.pcm
 
 LICENSE
 README.md
 
-
+dog
 MSG_server
 demo_app
-dog
 misc_service
 upgrade
 upgrade_service
+net_service
 
 #-------------------------
 # Force tracking directory
 #-------------------------
 !upgrade_service/
+!net_service/
 
 
 
