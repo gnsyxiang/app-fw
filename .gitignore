@@ -83,6 +83,12 @@ doxygen/
 *.la
 platform/*/*/filesystem/*/app/res/font/*.font
 platform/*/*/filesystem/*/app/res/voice/*.pcm
+platform/*/*/filesystem/*/app/lib/lib*.a
+platform/*/*/filesystem/*/app/lib/lib*.so
+platform/*/*/filesystem/*/app/lib/lib*.so.0
+platform/*/*/filesystem/*/app/lib/lib*.so.0.0.1
+platform/*/*/filesystem/*/param/ROM/*.json
+platform/*/*/filesystem/*/param/usr_config/*.json
 
 LICENSE
 README.md

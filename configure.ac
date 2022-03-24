@@ -82,6 +82,7 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  dog/include/Makefile
                  dog/res/Makefile
                  dog/src/Makefile
+                 include/Makefile
                  misc_service/Makefile
                  misc_service/include/Makefile
                  misc_service/res/Makefile
@@ -114,6 +115,16 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  res/voice/Makefile
                  res/voice/cn/Makefile
                  res/voice/en/Makefile
+                 src/Makefile
+                 src/product/Makefile
+                 src/product/eeasytech/Makefile
+                 src/product/eeasytech/SV823/HY-8608/Makefile
+                 src/product/eeasytech/SV823/HY-8608/res/Makefile
+                 src/product/eeasytech/SV823/HY-8608E/Makefile
+                 src/product/eeasytech/SV823/HY-8608EV2/Makefile
+                 src/product/eeasytech/SV823/Makefile
+                 src/product/pc/Makefile
+                 src/product/pc/pc-chip/Makefile
                  upgrade_service/Makefile
                  upgrade_service/include/Makefile
                  upgrade_service/res/Makefile

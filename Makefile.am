@@ -21,6 +21,8 @@
 include res/doxygen.am
 
 SUBDIRS = \
+          include           \
+          src               \
           dog               \
           demo_app          \
           misc_service      \
