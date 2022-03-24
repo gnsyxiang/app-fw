@@ -18,17 +18,5 @@
 #     last modified: 10/03 2022 17:12
 # ===============================================================
 
-if COMPILE_SELECT_PRODUCT_HY_8608
-_select_product = HY-8608
-endif
-
-if COMPILE_SELECT_PRODUCT_HY_8608E
-_select_product = HY-8608E
-endif
-
-if COMPILE_SELECT_PRODUCT_HY_8608EV2
-_select_product = HY-8608EV2
-endif
-
-SUBDIRS = ${_select_product}
+SUBDIRS = $(product)
 

@@ -108,17 +108,6 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/pc/pc-chip/3rd_lib/lib/Makefile
                  platform/pc/pc-chip/Makefile
                  platform/pc/pc-chip/filesystem/HY-pc/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/ROM/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/bin/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/etc/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/ko/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/lib/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/res/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/res/font/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/res/voice/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/res/voice/cn/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/res/voice/en/Makefile
-                 platform/pc/pc-chip/filesystem/HY-pc/usr_config/Makefile
                  platform/pc/pc-chip/filesystem/Makefile
                  res/Makefile
                  res/font/Makefile

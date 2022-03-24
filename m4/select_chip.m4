@@ -45,6 +45,8 @@ AC_DEFUN([SELECT_CHIP],
             ;;
         esac
 
+        AC_SUBST(chip)
+
         AM_CONDITIONAL([COMPILE_SELECT_CHIP_PC],        [test "x$with_chip" = "xpc-chip"])
         AM_CONDITIONAL([COMPILE_SELECT_CHIP_SV823],     [test "x$with_chip" = "xSV823"])
     ])

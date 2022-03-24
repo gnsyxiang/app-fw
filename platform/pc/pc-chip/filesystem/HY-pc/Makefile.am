@@ -5,7 +5,7 @@
 # @file    Makefile.am
 # @brief   
 # @author  gnsyxiang <gnsyxiang@163.com>
-# @date    10/03 2022 19:27
+# @date    21/03 2022 17:26
 # @version v0.0.1
 # 
 # @since    note
@@ -13,17 +13,8 @@
 # 
 #     change log:
 #     NO.     Author              Date            Modified
-#     00      zhenquan.qiu        10/03 2022      create the file
+#     00      zhenquan.qiu        21/03 2022      create the file
 # 
-#     last modified: 10/03 2022 19:27
+#     last modified: 21/03 2022 17:26
 # ===============================================================
-
-SUBDIRS = \
-          bin           \
-          etc           \
-          ko            \
-          lib           \
-          res           \
-          ROM           \
-          usr_config
 

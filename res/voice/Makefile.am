@@ -18,13 +18,5 @@
 #     last modified: 23/03 2022 19:07
 # ===============================================================
 
-if COMPILE_SELECT_LANGUAGE_CN
-_select_language = cn
-endif
-
-if COMPILE_SELECT_LANGUAGE_EN
-_select_language = en
-endif
-
-SUBDIRS = $(_select_language)
+SUBDIRS = $(language)
 
