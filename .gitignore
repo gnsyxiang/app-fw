@@ -100,6 +100,7 @@ net_service
 #-------------------------
 !upgrade_service/
 !net_service/
+!misc_service/
 
 
 
