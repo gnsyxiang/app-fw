@@ -186,6 +186,7 @@ get_config()
 
     _install_path=`sed '/^install_path=/!d;s/.*=//' $_config_file`
     install_path=`pwd`/platform/${usr_select_vender}/${usr_select_chip}/filesystem/${usr_select_product}/app
+    third_lib_path=`pwd`/platform/${usr_select_vender}/${usr_select_chip}/3rd_lib
 
     cppflag="${cppflag} ${_cppflag}"
     cflag="${cflag} ${_cflag}"
@@ -206,8 +207,8 @@ get_config
 
 cur_path=`pwd`
 
-cppflag="${cppflag} -I${install_path}/include"
-ldflag="${ldflag} -L${install_path}/lib"
+cppflag="${cppflag} -I${third_lib_path}/include"
+ldflag="${ldflag} -L${third_lib_path}/lib"
 
 make distclean
 
@@ -222,7 +223,7 @@ ${cur_path}/configure                                       \
     CXXFLAGS="${cxxflag}"                                   \
     LDFLAGS="${ldflag}"                                     \
     LIBS="${lib}"                                           \
-    PKG_CONFIG_PATH="${install_path}/lib/pkgconfig"         \
+    PKG_CONFIG_PATH="${third_lib_path}/lib/pkgconfig"       \
     --prefix=${install_path}                                \
     --build=                                                \
     --host=${host}                                          \
