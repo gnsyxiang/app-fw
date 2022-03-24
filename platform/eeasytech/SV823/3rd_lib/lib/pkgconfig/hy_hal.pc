@@ -1,0 +1,17 @@
+prefix=/mnt/data/xia/app-fw/platform/eeasytech/SV823/3rd_lib
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libhy_hal
+Version: 1.2.0_7_g71ff7f9
+URL: https://gitee.com/gnsyxiang/libhy_hal.git
+Description: system isolation layer（系统隔离层）
+
+Requires:
+Requires.private:
+Conflicts:
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhy_hal
+Libs.private:

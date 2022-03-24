@@ -89,6 +89,7 @@ platform/*/*/filesystem/*/app/lib/lib*.so.0
 platform/*/*/filesystem/*/app/lib/lib*.so.0.0.1
 platform/*/*/filesystem/*/param/ROM/*.json
 platform/*/*/filesystem/*/param/usr_config/*.json
+platform/*/*/3rd_lib/bin/hy_*_test
 
 LICENSE
 README.md
