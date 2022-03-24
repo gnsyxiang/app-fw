@@ -41,7 +41,10 @@ _define_com     +=
 
 _include_com    +=
 
-_sources_com    +=
+_sources_com    += \
+                   eth.c    \
+                   wlan.c   \
+                   4G.c
 
 _cppflags_com   += \
                    $(_no_error_com) \
