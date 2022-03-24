@@ -43,6 +43,7 @@ _include_com    +=
 
 _sources_com    += \
                    eth.c    \
+                   ntp.c    \
                    wlan.c   \
                    4G.c
 

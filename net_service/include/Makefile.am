@@ -28,6 +28,7 @@ _no_install_headers_com =
 # ---------------------
 _no_install_headers_com += \
                            eth.h    \
+                           ntp.h    \
                            wlan.h   \
                            4G.h
 
