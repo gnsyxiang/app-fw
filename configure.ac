@@ -62,10 +62,21 @@ AC_PROG_MAKE_SET
 # Checks for libraries.
 
 # Checks for header files.
+AC_CHECK_HEADERS([stddef.h stdint.h stdlib.h string.h unistd.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
+AC_C_INLINE
+AC_TYPE_INT32_T
+AC_TYPE_INT8_T
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+AC_TYPE_SSIZE_T
+AC_TYPE_UINT32_T
+AC_TYPE_UINT8_T
 
 # Checks for library functions.
+AC_FUNC_MALLOC
+AC_CHECK_FUNCS([memset])
 
 AC_CONFIG_FILES([MSG_server/Makefile
                  MSG_server/include/Makefile
@@ -97,10 +108,6 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  net_service/src/Makefile
                  platform/Makefile
                  platform/eeasytech/Makefile
-                 platform/eeasytech/SV823/3rd_lib/Makefile
-                 platform/eeasytech/SV823/3rd_lib/bin/Makefile
-                 platform/eeasytech/SV823/3rd_lib/include/Makefile
-                 platform/eeasytech/SV823/3rd_lib/lib/Makefile
                  platform/eeasytech/SV823/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608E/Makefile

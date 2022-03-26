@@ -18,7 +18,17 @@
 #     last modified: 10/03 2022 17:07
 # ===============================================================
 
-SUBDIRS = \
-          3rd_lib       \
-          filesystem
+SUBDIRS = filesystem
+
+# ------------------
+# defining variables
+# ------------------
+_dist_file_com  =
+
+# ---------------
+# make dist files
+# ---------------
+_dist_file_com  += 3rd_lib
+
+EXTRA_DIST      = $(_dist_file_com)
 
