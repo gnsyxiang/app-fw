@@ -27,6 +27,7 @@ _no_install_headers_com =
 # add necessary content
 # ---------------------
 _no_install_headers_com += \
+                           hy_path.h    \
                            hy_product.h
 
 # ------------------

@@ -26,10 +26,23 @@ extern "C" {
 
 #define HY_PRODUCT_NAME_LEN_MAX (32)
 
+typedef enum {
+    // pc->pc_chip
+    HY_PRODUCT_ID_PC_PC_CHIP = 0x0,
+    HY_PRODUCT_ID_PC_PC_CHIP_HY_PC,
+
+    // eeasytech->SV823
+    HY_PRODUCT_ID_EEASYTECH_SV823 = 0x1000,
+    HY_PRODUCT_ID_EEASYTECH_SV823_HY_8608,
+    HY_PRODUCT_ID_EEASYTECH_SV823_HY_8608E,
+    HY_PRODUCT_ID_EEASYTECH_SV823_HY_8608EV2,
+} HyProductId_e;
+
 void HyProductCreate(void);
 void HyProductDestroy(void);
 
 const char *HyProductGetName(void);
+HyProductId_e HyProductGetId(void);
 
 #ifdef __cplusplus
 }
