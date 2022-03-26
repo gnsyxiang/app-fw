@@ -18,31 +18,34 @@
 #     last modified: 21/03 2022 17:26
 # ===============================================================
 
-path_3rd_lib := ../../3rd_lib
+3rd_lib_path = "../../3rd_lib"
+tools_path = "../../tools"
+app_path = "./app"
+param = "./param"
 
 img: pre_img pack_img
 	@echo "make img successful"
 
 pre_img: copy_3rd_lib_bin copy_3rd_lib_lib copy_3rd_lib_res
-	@rm -rf app/lib/*.a; \
-		rm -rf app/lib/*.la
+	@rm -rf $(app_path)/lib/*.a; \
+		rm -rf $(app_path)/lib/*.la
 
 copy_3rd_lib_bin:
-	@echo "copy 3rd_lib bin"; \
-		cp -ar $(path_3rd_lib)/bin/hy_template_test ./app/bin
+	@echo "copy 3rd_lib bin"
 
 copy_3rd_lib_lib:
 	@echo "copy 3rd_lib lib"; \
-		cp -ar $(path_3rd_lib)/lib/*.so* ./app/lib; \
-		$(STRIP) ./app/lib/*
+		cp -ar $(3rd_lib_path)/lib/*.so* $(app_path)/lib; \
+		rm -rf $(app_path)/lib/*.a; \
+		rm -rf $(app_path)/lib/*.la; \
+		$(STRIP) $(app_path)/lib/*
 
 copy_3rd_lib_res:
 	@echo "copy 3rd_lib res"
 
 pack_img: pack_sqfs
-	@echo "pack img"
 
 pack_sqfs:
-	@echo "pack app sqfs"
-
+	@echo "pack app sqfs"; \
+		mksquashfs $(app_path) app.sqfs.xz -comp xz -all-root
 
