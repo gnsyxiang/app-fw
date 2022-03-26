@@ -28,7 +28,9 @@ _dist_file_com  =
 # ---------------
 # make dist files
 # ---------------
-_dist_file_com  += 3rd_lib
+_dist_file_com  += \
+                   tools    \
+                   3rd_lib
 
 EXTRA_DIST      = $(_dist_file_com)
 
