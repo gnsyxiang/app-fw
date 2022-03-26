@@ -88,6 +88,7 @@ platform/*/*/filesystem/*/app/lib/lib*.so*
 platform/*/*/filesystem/*/param/ROM/*.json
 platform/*/*/filesystem/*/param/usr_config/*.json
 platform/*/*/filesystem/*/app.sqfs.xz
+platform/*/*/filesystem/*/param.ext4
 platform/*/*/3rd_lib/bin/hy_*_test
 
 LICENSE
