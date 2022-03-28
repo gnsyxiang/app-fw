@@ -1,0 +1,17 @@
+prefix=/mnt/data/xia/app-fw/platform/pc/pc-chip/3rd_lib
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libhy_utils
+Version: 1.1.0_175_gbae0560
+URL: https://gitee.com/gnsyxiang/libhy_utils.git
+Description: platform independent tool library（跟平台无关的工具库）
+
+Requires: hy_hal
+Requires.private:
+Conflicts:
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhy_utils
+Libs.private:
