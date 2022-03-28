@@ -22,6 +22,7 @@
 # defining variables
 # ------------------
 _install_files_com  =
+_dist_file_com      =
 voicedir            = $(prefix)/res/voice
 voice_DATA          =
 
@@ -29,6 +30,13 @@ voice_DATA          =
 # add necessary content
 # ---------------------
 
+# ---------------
+# make dist files
+# ---------------
+_dist_file_com      += \
+                       demo.pcm
+
+EXTRA_DIST          = $(_dist_file_com)
 
 # ------------------
 # make install files

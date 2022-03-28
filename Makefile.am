@@ -30,7 +30,9 @@ SUBDIRS = \
           upgrade_service   \
           net_service       \
           res               \
-          platform
+          platform          \
+          doc               \
+          build-script
 
 # ------------------
 # defining variables

@@ -116,10 +116,6 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  platform/eeasytech/SV823/filesystem/HY-8608EV2/Makefile
                  platform/eeasytech/SV823/filesystem/Makefile
                  platform/pc/Makefile
-                 platform/pc/pc-chip/3rd_lib/Makefile
-                 platform/pc/pc-chip/3rd_lib/bin/Makefile
-                 platform/pc/pc-chip/3rd_lib/include/Makefile
-                 platform/pc/pc-chip/3rd_lib/lib/Makefile
                  platform/pc/pc-chip/Makefile
                  platform/pc/pc-chip/filesystem/HY-pc/Makefile
                  platform/pc/pc-chip/filesystem/Makefile
@@ -137,6 +133,8 @@ AC_CONFIG_FILES([MSG_server/Makefile
                  src/product/eeasytech/SV823/HY-8608EV2/Makefile
                  src/product/eeasytech/SV823/Makefile
                  src/product/pc/Makefile
+                 src/product/pc/pc-chip/HY-pc/Makefile
+                 src/product/pc/pc-chip/HY-pc/res/Makefile
                  src/product/pc/pc-chip/Makefile
                  upgrade_service/Makefile
                  upgrade_service/include/Makefile

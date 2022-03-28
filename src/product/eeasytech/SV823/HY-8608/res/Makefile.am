@@ -23,6 +23,7 @@
 # ------------------
 _rom_install_files  =
 _usr_install_files  =
+_dist_file_com      =
 romdir              = $(prefix)/../param/ROM
 usrdir              = $(prefix)/../param/usr_config
 rom_DATA            =
@@ -32,6 +33,14 @@ usr_DATA            =
 # add necessary content
 # ---------------------
 
+# ---------------
+# make dist files
+# ---------------
+_dist_file_com      += \
+                       net.json     \
+                       product.json
+
+EXTRA_DIST          = $(_dist_file_com)
 
 # ------------------
 # make install files

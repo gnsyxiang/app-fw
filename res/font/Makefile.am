@@ -22,6 +22,7 @@
 # defining variables
 # ------------------
 _install_files_com  =
+_dist_file_com      =
 fontdir             = $(prefix)/res/font
 font_DATA           =
 
@@ -29,6 +30,13 @@ font_DATA           =
 # add necessary content
 # ---------------------
 
+# ---------------
+# make dist files
+# ---------------
+_dist_file_com      += \
+                       demo.font
+
+EXTRA_DIST          = $(_dist_file_com)
 
 # ------------------
 # make install files
